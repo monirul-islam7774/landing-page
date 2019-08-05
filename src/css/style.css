@@ -1,0 +1,25 @@
+body{
+    margin: 0 !important;
+}
+.bgBorder{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.topImage{
+    text-align: center;
+    z-index: 9;
+}
+
+.topImage img{
+    position: absolute;
+    top: 0;
+    left: 4%;
+    width: 93%;
+}
+.bannerImage img{
+    width: 100%;
+}
