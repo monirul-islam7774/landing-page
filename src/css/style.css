@@ -8,26 +8,55 @@ body{
     left: 0;
     z-index: 10;
 }
-
 .topImage{
     text-align: center;
     z-index: 9;
 }
-
 .topImage img{
     position: absolute;
     top: 0;
-    left: 4%;
+    left: 3%;
     width: 93%;
 }
-.bannerImage img{
+.topImageTextPosition{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    width: 45%;
+    text-align: left;
+}
+.topImage span{
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 0;
+    color: #0674BB;
+}
+.topImage p:nth-child(1){
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 0;
+    color: #A74276;
+}
+.topImage p:nth-child(2){
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 0;
+    color: #0674BB;
+}
+#canvas{
     width: 100%;
     margin-bottom: 10%;
 }
 .circularBackgroundImage{
     text-align: center;
     position: absolute;
-    top: 100%;
+    top: 60%;
     width: 100%;
 }
 .circularBackgroundImage img{
@@ -39,8 +68,9 @@ body{
     margin: 0 auto;
     text-align: center;
     z-index: 9;
+    position: relative;
 }
-.titleTextHeader p{
+.titleTextHeader p:nth-child(1){
     font-family: montserrat, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -49,12 +79,232 @@ body{
     line-height: 58px;
     color: #A84577;
 }
-.titleTextHeader span{
+.titleTextHeader p:nth-child(2){
     font-family: montserrat, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
     line-height: 35px;
     color: #29292B;
-    width: 50%;
 }
+.popularPackage{
+    text-align: center;
+    margin-top: 7%;
+}
+.popularPackage p{
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 10px;
+    line-height: 25px;
+    color: #2A7691;
+    text-transform: uppercase;
+}
+.packagesCart{
+    width: 470px;
+    height: 365px;
+    box-shadow: 0px 1px 35px #cccccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    left: 12%;
+    margin-top: 4%;
+    margin-right: 7%;
+    display: inline-block;
+}
+.packagesCart p:nth-child(1){
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 50px;
+    color: #A84577;
+    text-transform: uppercase;
+}
+.packagesCart p:nth-child(2){
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 35px;
+    color: #2A7691;
+}
+.packagesCart p:nth-child(3),.packagesCart p:nth-child(4){
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 31px;
+    color: #A84577;
+}
+.packagesCart button{
+    width: 150px;
+    height: 50px;
+    background-color: #82CA9C;
+    border-radius: 50px;
+    margin-top: 7%;
+}
+.packagesCart button p{
+    font-size: 15px !important;
+    color: white !important;
+    line-height: 0px !important;
+    text-transform: uppercase;
+    width: 50%;
+    margin: 0 auto;
+}
+.packagesCart button p:after{
+    margin-left: 12%;
+    content: '→ ';
+}
+.giftPolicy{
+    width: 747px;
+    margin: 0 auto;
+    position: relative;
+    height: 95px;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    margin-top: 10%;
+}
+.giftPolicy p{
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #2A7691;
+    padding-top: 2%;
+    padding-left: 5%;
+    display: inline-block;
+}
+.giftPolicy button{
+    width: 175px;
+    height: 50px;
+    background-color: #2A7691;
+    border-radius: 50px;
+    margin-left: 2%;
+}
+.giftPolicy button p{
+    font-size: 15px !important;
+    color: white !important;
+    line-height: 0px !important;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0 auto;
+}
+.giftPolicy button p:after{
+    margin-left: 10%;
+    content: '→ ';
+}
+.footer{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 7%;
+}
+.footerContext{
+    margin-left: 6%;
+}
+.termsAndConditions{
+    text-align: left !important;
+    width: 25%;
+    display: inline-block;
+}
+.termsAndConditions img{
+    float: left;
+    margin-right: 4%;
+}
+.termsAndConditions p:nth-child(1){
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #2A7691;
+}
+.termsAndConditions p:nth-child(3){
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 35px;
+    color: #2A7691;
+    text-align: left;
+}
+.termsAndConditions p:nth-child(4){
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 35px;
+    color: #2A7691;
+    margin-top: -10%;
+}
+.addressAndEmail{
+    text-align: left !important;
+    width: 25%;
+    display: inline-block;
+    margin-left: 3%;
+}
+.addressAndEmail p{
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 22px;
+    color: #2A7691;
+}
+.copyrights{
+    text-align: left !important;
+    width: 25%;
+    display: inline-block;
+    margin-left: 3%;
+}
+.copyrights p{
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 22px;
+    color: #2A7691;
+}
+.copyrights img{
+    margin-right: 3%;
+}
+.websiteDetails p{
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 34px;
+    color: #BCB4BE;
+}
+hr{
+    border: 1px solid #f7f7f7 !important;
+}
+
+
+/* Media Queries start*/
+
+@media (min-width: 1367px) {
+    body{
+        width: 1366px;
+        margin: 0 auto !important;
+    }
+    .bgBorder{
+        width: 1366px;
+        left: auto;
+    }
+    .circularBackgroundImage{
+        width: 1366px;
+        top: 55%;
+    }
+    .topImage img{
+        width: 1266px;
+        left: 25%;
+    }
+}
+
+
+/* Media Queries end*/
