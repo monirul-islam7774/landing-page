@@ -20,7 +20,7 @@ body{
 }
 .topImageTextPosition{
     position: absolute;
-    top: 7%;
+    top: 13%;
     left: 50%;
     width: 45%;
     text-align: left;
@@ -56,7 +56,7 @@ body{
 .circularBackgroundImage{
     text-align: center;
     position: absolute;
-    top: 60%;
+    top: 110%;
     width: 100%;
 }
 .circularBackgroundImage img{
@@ -145,6 +145,7 @@ body{
     background-color: #82CA9C;
     border-radius: 50px;
     margin-top: 7%;
+    border-style: unset;
 }
 .packagesCart button p{
     font-size: 15px !important;
@@ -184,6 +185,7 @@ body{
     background-color: #2A7691;
     border-radius: 50px;
     margin-left: 2%;
+    border-style: unset;
 }
 .giftPolicy button p{
     font-size: 15px !important;
@@ -201,7 +203,7 @@ body{
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 7%;
+    margin-top: 4%;
 }
 .footerContext{
     margin-left: 6%;
@@ -303,6 +305,137 @@ hr{
     .topImage img{
         width: 1266px;
         left: 25%;
+    }
+}
+@media (min-width: 200px) and (max-width: 360px) {
+    .topImageTextPosition {
+        top: 2%;
+        left: 50%;
+        width: 50%;
+    }
+    .topImage p:nth-child(1) {
+        font-size: 12px;
+        line-height: 1;
+    }
+    .topImage span {
+        font-size: 14px;
+        line-height: 1;
+    }
+    .topImage p:nth-child(2) {
+        font-size: 12px;
+    }
+    .titleTextHeader{
+        width: 90%;
+    }
+    .titleTextHeader p:nth-child(1) {
+        font-size: 18px;
+        letter-spacing: 2px;
+        line-height: 21px;
+    }
+    .titleTextHeader p:nth-child(2) {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .popularPackage p {
+        font-size: 15px;
+        letter-spacing: 7px;
+        line-height: 25px;
+    }
+    .packagesCart button {
+        width: 120px;
+        height: 35px;
+    }
+    .packagesCart button p {
+        font-size: 11px !important;
+    }
+    .packagesCart{
+        width: 90%;
+        height: 310px;
+        left: 5%;
+        padding-top: 5%;
+    }
+    .packagesCart p:nth-child(1){
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .packagesCart p:nth-child(2){
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .packagesCart p:nth-child(3), .packagesCart p:nth-child(4){
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .giftPolicy{
+        width: 90%;
+        height: 110px;
+        text-align: center;
+    }
+    .giftPolicy p{
+        font-size: 12px;
+        line-height: 1;
+        text-align: center;
+        padding-left: 0;
+    }
+    .giftPolicy button{
+        width: 135px;
+        height: 35px;
+        margin-left: 0;
+    }
+    .giftPolicy button p{
+        font-size: 12px !important;
+    }
+    .footerContext{
+        margin-left: 0;
+    }
+    .termsAndConditions {
+        text-align: center !important;
+        width: 100%;
+    }
+    .termsAndConditions p:nth-child(1) {
+        font-size: 18px;
+        line-height: 10px;
+    }
+    .termsAndConditions img {
+        float: none;
+        margin-right: 0;
+        height: 30px;
+    }
+    .termsAndConditions p:nth-child(3) {
+        font-size: 16px;
+        line-height: 1;
+        text-align: center;
+    }
+    .termsAndConditions p:nth-child(4) {
+        font-size: 12px;
+        line-height: 40px;
+        margin-top: -8%;
+    }
+    .addressAndEmail {
+        text-align: center !important;
+        width: 100%;
+        margin-left: 0;
+    }
+    .addressAndEmail p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .copyrights {
+        text-align: center !important;
+        width: 100%;
+        margin-left: 0;
+    }
+    .copyrights img {
+        width: 10px;
+        height: 17px;
+    }
+    .copyrights p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .websiteDetails p {
+        font-size: 10px;
+        line-height: 30px;
     }
 }
 
