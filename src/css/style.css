@@ -1,18 +1,11 @@
 body{
     margin: 0 !important;
     border: 10px solid transparent;
-    border-image-source: url('../../assets/border.png');
+    border-image-source: url('../../assets/border-full.png');
     border-image-repeat: round;
     border-image-slice: 30;
-    border-image-width: 30px;
+    border-image-width: 40px;
     position: absolute;
-}
-.bgBorder{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
 }
 .topImage{
     text-align: center;
@@ -306,14 +299,6 @@ hr{
         left: 22%;
 
     }
-    .bgBorder{
-        width: 1366px;
-        left: auto;
-    }
-    .circularBackgroundImage{
-        width: 1366px;
-        top: 55%;
-    }
     .topImage img{
         width: 97%;
         left: 1%;
@@ -522,7 +507,7 @@ hr{
 
 @media (min-width: 481px) and (max-width: 640px) {
     .circularBackgroundImage img{
-        top: 8%;
+        top: 12%;
     }
     .topImageTextPosition {
         top: 25px;
@@ -647,7 +632,7 @@ hr{
 }
 @media (min-width: 481px) and (max-width: 600px) {
     .circularBackgroundImage img{
-        top: 8%;
+        top: 12%;
     }
     .giftPolicy{
         width: 90%;
@@ -999,3 +984,8 @@ hr{
     }
 }
 /* Media Queries end*/
+
+/*
+As I don't have any mobile design PSD file I used my visuals into it. Also the assets were breaking when I try to fit them anything above 1366px so I made the whole page center and smaller when screen is above 1366px of width.
+
+*/
