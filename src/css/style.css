@@ -1,5 +1,11 @@
 body{
     margin: 0 !important;
+    border: 10px solid transparent;
+    border-image-source: url('../../assets/border.png');
+    border-image-repeat: round;
+    border-image-slice: 30;
+    border-image-width: 30px;
+    position: absolute;
 }
 .bgBorder{
     position: absolute;
@@ -14,13 +20,14 @@ body{
 }
 .topImage img{
     position: absolute;
-    top: 0;
-    left: 3%;
-    width: 93%;
+    top: -2%;
+    left: 2%;
+    width: 95%;
+    z-index: -1;
 }
 .topImageTextPosition{
     position: absolute;
-    top: 13%;
+    top: 3%;
     left: 50%;
     width: 45%;
     text-align: left;
@@ -52,15 +59,19 @@ body{
 #canvas{
     width: 100%;
     margin-bottom: 10%;
+    position: relative;
+    z-index: -2;
 }
 .circularBackgroundImage{
     text-align: center;
-    position: absolute;
-    top: 110%;
     width: 100%;
 }
 .circularBackgroundImage img{
-    width: 90%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 28%;
+    z-index: -1;
 }
 
 .titleTextHeader{
@@ -102,8 +113,9 @@ body{
     text-transform: uppercase;
 }
 .packagesCart{
-    width: 470px;
-    height: 365px;
+    width: 25%;
+    height: auto;
+    padding: 5%;
     box-shadow: 0px 1px 35px #cccccc;
     border-radius: 5px;
     text-align: center;
@@ -222,7 +234,6 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    line-height: 35px;
     color: #2A7691;
 }
 .termsAndConditions p:nth-child(3){
@@ -254,7 +265,7 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 13px;
-    line-height: 22px;
+    line-height: 25px;
     color: #2A7691;
 }
 .copyrights{
@@ -291,8 +302,9 @@ hr{
 
 @media (min-width: 1367px) {
     body{
-        width: 1366px;
-        margin: 0 auto !important;
+        width: 56%;
+        left: 22%;
+
     }
     .bgBorder{
         width: 1366px;
@@ -303,26 +315,94 @@ hr{
         top: 55%;
     }
     .topImage img{
-        width: 1266px;
-        left: 25%;
+        width: 97%;
+        left: 1%;
+        top: -1%;
     }
-}
-@media (min-width: 200px) and (max-width: 360px) {
-    .topImageTextPosition {
-        top: 2%;
-        left: 50%;
-        width: 50%;
+    .topImageTextPosition{
+        top: 1%;
     }
     .topImage p:nth-child(1) {
-        font-size: 12px;
+        font-size: 20px;
         line-height: 1;
     }
     .topImage span {
-        font-size: 14px;
+        font-size: 24px;
         line-height: 1;
     }
     .topImage p:nth-child(2) {
+        font-size: 20px;
+        line-height: 1;
+    }
+    .titleTextHeader{
+        width: 90%;
+    }
+    .footer{
+        width: 80%;
+    }
+
+    .termsAndConditions {
+        width: 30%;
+    }
+    .termsAndConditions p:nth-child(1) {
+        font-size: 18px;
+        line-height: 2;
+    }
+    .termsAndConditions img {
+        height: 30px;
+    }
+    .termsAndConditions p:nth-child(3) {
+        font-size: 16px;
+        line-height: 2;
+    }
+    .termsAndConditions p:nth-child(4) {
         font-size: 12px;
+    }
+
+    .addressAndEmail {
+        width: 30%;
+    }
+    .addressAndEmail p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .copyrights {
+        width: 30%;
+    }
+    .copyrights img {
+        height: 20px;
+    }
+    .copyrights p {
+        font-size: 12px;
+    }
+}
+@media (min-width: 200px) and (max-width: 480px) {
+    .circularBackgroundImage img{
+        top: 9%;
+    }
+    .topImageTextPosition {
+        top: 15px;
+        left: 57%;
+        width: 40%;
+    }
+    .topImage img {
+        position: absolute;
+        top: -1px;
+        left: 3%;
+        width: 95%;
+        z-index: -1;
+    }
+    .topImage p:nth-child(1) {
+        font-size: 10px;
+        line-height: 1;
+    }
+    .topImage span {
+        font-size: 12px;
+        line-height: 1;
+    }
+    .topImage p:nth-child(2) {
+        font-size: 10px;
+        line-height: 1;
     }
     .titleTextHeader{
         width: 90%;
@@ -337,7 +417,7 @@ hr{
         line-height: 20px;
     }
     .popularPackage p {
-        font-size: 15px;
+        font-size: 12px;
         letter-spacing: 7px;
         line-height: 25px;
     }
@@ -350,9 +430,10 @@ hr{
     }
     .packagesCart{
         width: 90%;
-        height: 310px;
+        height: auto;
         left: 5%;
-        padding-top: 5%;
+        padding: 0;
+        padding-bottom: 5% !important;
     }
     .packagesCart p:nth-child(1){
         font-size: 16px;
@@ -368,14 +449,14 @@ hr{
     }
     .giftPolicy{
         width: 90%;
-        height: 110px;
+        height: 150px;
         text-align: center;
     }
     .giftPolicy p{
         font-size: 12px;
-        line-height: 1;
+        line-height: 2;
         text-align: center;
-        padding-left: 0;
+        padding: 3%;
     }
     .giftPolicy button{
         width: 135px;
@@ -409,7 +490,7 @@ hr{
     .termsAndConditions p:nth-child(4) {
         font-size: 12px;
         line-height: 40px;
-        margin-top: -8%;
+        margin-top: -5%;
     }
     .addressAndEmail {
         text-align: center !important;
@@ -439,5 +520,482 @@ hr{
     }
 }
 
+@media (min-width: 481px) and (max-width: 640px) {
+    .circularBackgroundImage img{
+        top: 8%;
+    }
+    .topImageTextPosition {
+        top: 25px;
+        left: 57%;
+        width: 40%;
+    }
+    .topImage img {
+        position: absolute;
+        top: -4px;
+        left: 3%;
+        width: 95%;
+        z-index: -1;
+    }
+    .topImage p:nth-child(1) {
+        font-size: 12px;
+        line-height: 1;
+    }
+    .topImage span {
+        font-size: 14px;
+        line-height: 1;
+    }
+    .topImage p:nth-child(2) {
+        font-size: 12px;
+        line-height: 1;
+    }
+    .titleTextHeader{
+        width: 90%;
+    }
+    .titleTextHeader p:nth-child(1) {
+        font-size: 18px;
+        letter-spacing: 2px;
+        line-height: 21px;
+    }
+    .titleTextHeader p:nth-child(2) {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .popularPackage p {
+        font-size: 15px;
+        letter-spacing: 7px;
+        line-height: 25px;
+    }
+    .packagesCart button {
+        width: 120px;
+        height: 35px;
+    }
+    .packagesCart button p {
+        font-size: 11px !important;
+    }
+    .packagesCart{
+        width: 90%;
+        height: auto;
+        left: 5%;
+        padding: 0;
+        padding-bottom: 5% !important;
+    }
+    .packagesCart p:nth-child(1){
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .packagesCart p:nth-child(2){
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .packagesCart p:nth-child(3), .packagesCart p:nth-child(4){
+        font-size: 14px;
+        line-height: 25px;
+    }
 
+    .footerContext{
+        margin-left: 0;
+    }
+    .termsAndConditions {
+        text-align: center !important;
+        width: 100%;
+    }
+    .termsAndConditions p:nth-child(1) {
+        font-size: 18px;
+        line-height: 10px;
+    }
+    .termsAndConditions img {
+        float: none;
+        margin-right: 0;
+        height: 30px;
+    }
+    .termsAndConditions p:nth-child(3) {
+        font-size: 16px;
+        line-height: 1;
+        text-align: center;
+    }
+    .termsAndConditions p:nth-child(4) {
+        font-size: 12px;
+        line-height: 40px;
+        margin-top: -5%;
+    }
+    .addressAndEmail {
+        text-align: center !important;
+        width: 100%;
+        margin-left: 0;
+    }
+    .addressAndEmail p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .copyrights {
+        text-align: center !important;
+        width: 100%;
+        margin-left: 0;
+    }
+    .copyrights img {
+        width: 10px;
+        height: 17px;
+    }
+    .copyrights p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .websiteDetails p {
+        font-size: 10px;
+        line-height: 30px;
+    }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+    .circularBackgroundImage img{
+        top: 8%;
+    }
+    .giftPolicy{
+        width: 90%;
+        height: 150px;
+        text-align: center;
+    }
+    .giftPolicy p{
+        font-size: 12px;
+        line-height: 2;
+        text-align: center;
+        padding: 3%;
+    }
+    .giftPolicy button{
+        width: 135px;
+        height: 35px;
+        margin-left: 0;
+    }
+    .giftPolicy button p{
+        font-size: 12px !important;
+    }
+}
+@media (min-width: 601px) and (max-width: 640px) {
+    .circularBackgroundImage img{
+        top: 12%;
+    }
+    .giftPolicy{
+        width: 90%;
+        height: 90px;
+        text-align: center;
+        padding: 2%;
+    }
+    .giftPolicy p{
+        font-size: 12px;
+        line-height: 3;
+        text-align: center;
+        padding-left: 0;
+    }
+    .giftPolicy button{
+        width: 135px;
+        height: 35px;
+        margin-left: 10px;
+    }
+    .giftPolicy button p{
+        font-size: 12px !important;
+    }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+    .circularBackgroundImage img{
+        top: 15%;
+    }
+    .topImageTextPosition {
+        top: 35px;
+        left: 52%;
+        width: 45%;
+    }
+    .topImage img {
+        position: absolute;
+        top: -10px;
+        left: 3%;
+        width: 95%;
+        z-index: -1;
+    }
+    .topImage p:nth-child(1) {
+        font-size: 12px;
+        line-height: 1;
+    }
+    .topImage span {
+        font-size: 14px;
+        line-height: 1;
+    }
+    .topImage p:nth-child(2) {
+        font-size: 12px;
+        line-height: 1;
+    }
+    .titleTextHeader {
+        width: 90%;
+    }
+    .titleTextHeader p:nth-child(1) {
+        line-height: 50px;
+    }
+    .packagesCart{
+        width: 80%;
+        left: 10%;
+        padding-bottom: 5%!important;
+        padding: 0;
+    }
+    .giftPolicy{
+        width: 90%;
+        height: 90px;
+        text-align: center;
+        padding: 2%;
+    }
+    .giftPolicy p{
+        font-size: 14px;
+        line-height: 3;
+        text-align: center;
+        padding-left: 0;
+    }
+    .giftPolicy button{
+        width: 135px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    .giftPolicy button p{
+        font-size: 14px !important;
+    }
+    .footerContext{
+        margin-left: 0;
+    }
+    .termsAndConditions {
+        text-align: center !important;
+        width: 100%;
+    }
+    .termsAndConditions p:nth-child(1) {
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .termsAndConditions img {
+        float: none;
+        margin-right: 0;
+        height: 35px;
+    }
+    .termsAndConditions p:nth-child(3) {
+        font-size: 18px;
+        line-height: 1;
+        text-align: center;
+    }
+    .termsAndConditions p:nth-child(4) {
+        font-size: 18px;
+        line-height: 40px;
+        margin-top: -3%;
+    }
+    .addressAndEmail {
+        text-align: center !important;
+        width: 100%;
+        margin-left: 0;
+    }
+    .addressAndEmail p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .copyrights {
+        text-align: center !important;
+        width: 100%;
+        margin-left: 0;
+    }
+    .copyrights img {
+        width: 10px;
+        height: 17px;
+    }
+    .copyrights p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .websiteDetails p {
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px){
+    .circularBackgroundImage img{
+        top: 20%;
+    }
+    .topImageTextPosition {
+        top: 35px;
+        left: 52%;
+        width: 45%;
+    }
+    .topImage img {
+        position: absolute;
+        top: -10px;
+        left: 3%;
+        width: 95%;
+        z-index: -1;
+    }
+    .topImage p:nth-child(1) {
+        font-size: 16px;
+        line-height: 1;
+    }
+    .topImage span {
+        font-size: 18px;
+        line-height: 1;
+    }
+    .topImage p:nth-child(2) {
+        font-size: 16px;
+        line-height: 1;
+    }
+    .titleTextHeader{
+        width: 90%;
+    }
+    .packagesCart {
+        width: 25%;
+        height: auto;
+        padding: 5%;
+    }
+    .giftPolicy{
+        width: 90%;
+        height: 90px;
+        text-align: center;
+        padding: 2%;
+    }
+    .giftPolicy p{
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+        padding-left: 0;
+    }
+    .giftPolicy button{
+        width: 150px;
+        height: 50px;
+        margin-left: 20px;
+    }
+    .giftPolicy button p{
+        font-size: 16px !important;
+        line-height: 1 !important;
+    }
+
+}
+@media (min-width: 769px) and (max-width: 920px){
+    .footerContext{
+        margin-left: 0;
+    }
+    .termsAndConditions {
+        text-align: center !important;
+        width: 100%;
+    }
+    .termsAndConditions p:nth-child(1) {
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .termsAndConditions img {
+        float: none;
+        margin-right: 0;
+        height: 35px;
+    }
+    .termsAndConditions p:nth-child(3) {
+        font-size: 18px;
+        line-height: 1;
+        text-align: center;
+    }
+    .termsAndConditions p:nth-child(4) {
+        font-size: 18px;
+        line-height: 40px;
+        margin-top: -3%;
+    }
+    .addressAndEmail {
+        text-align: center !important;
+        width: 100%;
+        margin-left: 0;
+    }
+    .addressAndEmail p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .copyrights {
+        text-align: center !important;
+        width: 100%;
+        margin-left: 0;
+    }
+    .copyrights img {
+        width: 10px;
+        height: 17px;
+    }
+    .copyrights p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .websiteDetails p {
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+    .circularBackgroundImage img{
+        top: 25%;
+    }
+    .topImageTextPosition {
+        top: 50px;
+        left: 50%;
+        width: 50%;
+    }
+    .topImage img {
+        position: absolute;
+        top: -15px;
+        left: 2%;
+        width: 95%;
+        z-index: -1;
+    }
+    .topImage p:nth-child(1) {
+        font-size: 18px;
+        line-height: 1;
+    }
+    .topImage span {
+        font-size: 20px;
+        line-height: 1;
+    }
+    .topImage p:nth-child(2) {
+        font-size: 18px;
+        line-height: 1;
+    }
+    .titleTextHeader{
+        width: 90%;
+    }
+
+}
+@media (min-width: 921px) and (max-width: 1200px) {
+    .footer{
+        width: 80%;
+    }
+
+    .termsAndConditions {
+        width: 30%;
+    }
+    .termsAndConditions p:nth-child(1) {
+        font-size: 18px;
+        line-height: 2;
+    }
+    .termsAndConditions img {
+        height: 30px;
+    }
+    .termsAndConditions p:nth-child(3) {
+        font-size: 16px;
+        line-height: 1;
+    }
+    .termsAndConditions p:nth-child(4) {
+        font-size: 12px;
+    }
+
+    .addressAndEmail {
+        width: 30%;
+    }
+    .addressAndEmail p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .copyrights {
+        width: 30%;
+    }
+    .copyrights img {
+        height: 20px;
+    }
+    .copyrights p {
+        font-size: 12px;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1365px){
+    .titleTextHeader{
+        width: 90%;
+    }
+}
 /* Media Queries end*/
